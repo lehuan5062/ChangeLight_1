@@ -1,4 +1,8 @@
-﻿#include "ChangeLightWidget_2.h" // UChangeLightWidget_2
+﻿// ChangeLight_1
+#include "ChangeLightWidget_2.h" // UChangeLightWidget_2
+
+// core
+#include "Templates/UnrealTemplate.h" // MoveTemp
 
  // constructor
 UChangeLightWidget_2::UChangeLightWidget_2(const FObjectInitializer& ObjectInitializer)
@@ -35,7 +39,7 @@ void UChangeLightWidget_2::SetImageRefreshStyle(const TObjectPtr<UTexture2D>& te
 	SetImage(texture);
 
 	// refresh style trong runtime
-	button->SetStyle(button->WidgetStyle);
+	button->SetStyle(MoveTemp(button->WidgetStyle));
 }
 
 // đổi hình sáng tối
