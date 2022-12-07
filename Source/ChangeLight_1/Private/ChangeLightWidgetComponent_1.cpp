@@ -14,12 +14,3 @@ UChangeLightWidgetComponent_1::UChangeLightWidgetComponent_1(const FObjectInitia
 	// nhận chuột
 	bReceiveHardwareInput = true;
 }
-
-// event begin play
-void UChangeLightWidgetComponent_1::BeginPlay()
-{
-	Super::BeginPlay();
-
-	// ẩn khi begin play
-	SetVisibility(true);
-}

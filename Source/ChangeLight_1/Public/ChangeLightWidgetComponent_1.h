@@ -10,10 +10,6 @@ class CHANGELIGHT_1_API UChangeLightWidgetComponent_1 : public UWidgetComponent
 {
 	GENERATED_BODY()
 
-protected:
-	// event begin play
-	virtual void BeginPlay() override;
-
 public:
 	// parent alias
 	using Super = UWidgetComponent;
